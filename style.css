@@ -1,0 +1,100 @@
+body {
+  background-color: #c5c6da;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.todo-app {
+  max-width: 600px;
+  background-color: rgb(19, 17, 17);
+  padding: 20px 30px 50px;
+  margin: 70px auto 15px;
+  border-radius: 15px;
+}
+
+.todo-app h1 {
+    color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 20px;
+  font-size: 1rem;
+  border-radius: 15px;
+  margin-left: 20px;
+  background-color: #303142;
+  color: white;
+}
+
+.btn {
+  background-color:#303142;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.btn i{
+    font-size: 2rem;
+}
+
+.btn:hover {
+  background-color: #4a15e9;
+}
+
+ul li {
+  list-style-type: none;
+  font-size: 1.1rem;
+  padding: 10px 6px 10px 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+li{
+    color: white;
+    margin-top: 5px;
+    background-color:#606172;
+    border-radius: 10px;
+}
+
+ul li::before {
+  content: "☐";
+  font-size: 25px;
+  position: absolute;
+  left: 3px;
+  top: 4px;
+}
+
+#task-list {
+  padding: 0px 30px;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #fafafa;
+  font-weight: 700;
+}
+
+ul li.checked::before {
+  content: "☑";
+  color: #ffffff;
+}
+
+ul li span {
+  position: absolute;
+  top: 1.8px;
+  right: 5px;
+  color: orangered;
+  font-size: 2rem;
+}
